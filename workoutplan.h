@@ -4,7 +4,7 @@
 class WorkoutPlan {
 public:
   WorkoutPlan();
-  generateWorkout();
+  void generateWorkout();
 
 
 };

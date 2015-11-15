@@ -5,7 +5,7 @@
 class ActivityProfile {
 public:
   ActivityProfile();
-  CalculateTrends();
+  void CalculateTrends();
 
 
 };

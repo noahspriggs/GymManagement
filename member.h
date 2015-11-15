@@ -5,7 +5,7 @@
 class Member {
 public:
   Member();
-  addClass();
+  void addClass();
 
 
 };
