@@ -1,10 +1,10 @@
 build/release/main.o: main.cpp schedulecontroller.h fitnesslesson.h \
- fitnessinstructor.h member.h
+ employee.h person.h
 
 schedulecontroller.h:
 
 fitnesslesson.h:
 
-fitnessinstructor.h:
+employee.h:
 
-member.h:
+person.h:

@@ -2,13 +2,13 @@
 #define  FITNESSLESSON_H
 
 #include <ctime>
-#include "fitnessinstructor.h"
+#include "employee.h"
 
 class FitnessLesson {
 public:
   time_t time;
   int duration;
-  FitnessInstructor instructor;
+  Employee instructor;
   FitnessLesson();
 
 

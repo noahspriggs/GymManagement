@@ -1,5 +1,5 @@
-build/release/employee.o: employee.cpp employee.h member.h
+build/release/employee.o: employee.cpp employee.h person.h
 
 employee.h:
 
-member.h:
+person.h:

@@ -1,5 +1,5 @@
 build/release/memberview.o: memberview.cpp memberview.h \
- membershipcontroller.h member.h fitnesslesson.h fitnessinstructor.h
+ membershipcontroller.h member.h person.h fitnesslesson.h employee.h
 
 memberview.h:
 
@@ -7,6 +7,8 @@ membershipcontroller.h:
 
 member.h:
 
+person.h:
+
 fitnesslesson.h:
 
-fitnessinstructor.h:
+employee.h:

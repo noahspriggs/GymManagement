@@ -1,12 +1,12 @@
 #ifndef EMPLOYEE_H
 #define  EMPLOYEE_H
 
-#include "member.h"
+#include "person.h"
 
-class Employee : public Member {
+class Employee : public Person {
 public:
   Employee();
-
+  virtual Person* clone();
 
 
 };

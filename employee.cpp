@@ -3,3 +3,7 @@
 Employee::Employee() {
 
 }
+
+Person* Employee::clone() {
+
+}

@@ -1,8 +1,8 @@
 build/release/fitnesslesson.o: fitnesslesson.cpp fitnesslesson.h \
- fitnessinstructor.h member.h
+ employee.h person.h
 
 fitnesslesson.h:
 
-fitnessinstructor.h:
+employee.h:
 
-member.h:
+person.h:

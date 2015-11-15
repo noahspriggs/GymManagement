@@ -12,7 +12,7 @@ void MemberView::viewClassList(){
 
 }
 
-void reserveTrainer(FitnessInstructor f) {
+void reserveTrainer(Employee e) {
 
 }
 
@@ -25,5 +25,5 @@ void makePayment() {
 }
 
 void viewActivityProfile(Member m) {
-  
+
 }

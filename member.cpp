@@ -4,6 +4,10 @@ Member::Member() {
 
 }
 
+Person* Member::clone() {
+
+}
+
 void Member::addClass()
 {
 
