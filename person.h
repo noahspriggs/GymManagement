@@ -6,6 +6,7 @@
 class Person {
 public:
   std::string name;
+  int id;
   Person();
   virtual Person* clone() = 0;
 

@@ -1,0 +1,3 @@
+To build the project, use the provided makefile by typing make in the terminal after cloning the project.
+The build's .o files will be placed in build/release
+and the executable will be placed in bin/release

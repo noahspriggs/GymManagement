@@ -1,0 +1,5 @@
+package tutorial;
+
+message Person {
+  required string name = 1;
+}

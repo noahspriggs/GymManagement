@@ -8,6 +8,6 @@ public:
   Employee();
   virtual Person* clone();
 
-
+  int hoursPerWeek;
 };
 #endif

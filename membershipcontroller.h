@@ -11,5 +11,7 @@ public:
   void deleteMember(Member m);
   void getMemberActivityProfile(Member m);
 
+  std::vector<Person*> personList;
+
 };
 #endif
