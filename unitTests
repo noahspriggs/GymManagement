@@ -1,0 +1,54 @@
+TEST(MemberManipulation, Adding) {
+    Member m1;
+    Member m2;
+    MembershipController* memberC = new MembershipController();
+    MembershipController->addMember(m1);
+    EXPECT_TRUE(MembershipController.personList.contains(m1))
+    EXPECT_FALSE(MembershipController.personList.contains(m2))
+    MembershipController->addMember(m2);
+    EXPECT_TRUE(MembershipController.personList.contains(m1))
+    EXPECT_TRUE(MembershipController.personList.contains(m2))
+}
+
+TEST(MemberManipulation, Deleting) {
+    Member m1 = new Member();
+    Member m2 = new Member();
+    MembershipController* memberC = new MembershipController();
+    MembershipController->addMember(m1);
+    MembershipController->addMember(m2);
+    MembershipController->DeleteMember(m1);
+    EXPECT_TRUE(MembershipController.personList.contains(m2))
+    EXPECT_FALSE(MembershipController.personList.contains(m1))
+    MembershipController->DeleteMember(m2);
+    EXPECT_FALSE(MembershipController.personList.contains(m1))
+    EXPECT_FALSE(MembershipController.personList.contains(m2))
+}
+
+TEST(MemberManipulation, Fees) {
+    Member m1;
+    Member m2;
+    MemberView* mv = new MemberView();
+    MembershipController* memberC = new MembershipController();
+    m1.balance = 0;
+    m2.balance = 100;
+    EXPECT_EQ(0,MembershipController->checkMemberExpiry(m1));
+    EXPECT_TRUE(0<MembershipController->checkMemberExpiry(m2));
+    mv->makePayment(m1,100);
+    EXPECT_EQ(MembershipController->checkMembershipExpiry(m1),MembershipController->checkMembershipExpiry(m2));
+}
+
+TEST(MemberManipulation, PersonSuperClass) {
+    Member* m1 = new Member();
+    m1->name = "Jon";
+    m1->id = 123;
+    m1->activityLevel = 10;
+    Member* m2 = new Member();
+    Person* p1 = new Person();
+    m2 = m1;
+    p1 = m1;
+    EXPECT_EQ(0,strcmp(m1->name,p1->name));
+    EXPECT_EQ(m1->id,p1->id);
+    EXPECT_EQ(m1->id,m2->id);
+    Member* m3 = p1;
+    EXPECT_EQ(m1->activityLevel,m3->activityLevel);
+}
