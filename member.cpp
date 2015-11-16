@@ -12,7 +12,7 @@ Person* Member::clone() {
   return m;
 }
 
-void Member::addClass()
+void Member::addClass(FitnessLesson l)
 {
 
 }

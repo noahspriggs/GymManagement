@@ -5,8 +5,12 @@
 class ActivityProfile {
 public:
   ActivityProfile();
+  /**
+  Outputs meaningful statistics about the users activity profile
+  */
   void CalculateTrends();
 
+  int stats;
 
 };
 #endif

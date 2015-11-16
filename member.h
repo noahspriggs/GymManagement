@@ -1,6 +1,7 @@
 #ifndef MEMBER_H
 #define  MEMBER_H
 #include "person.h"
+#include "fitnesslesson.h"
 #include <iostream>
 #include <cstdio>
 
@@ -8,7 +9,10 @@
 class Member : public Person {
 public:
   Member();
-  void addClass();
+  /**
+  Adds a class to the member's workout plan
+  */
+  void addClass(FitnessLesson l);
   virtual Person* clone();
 
   int activityLevel;

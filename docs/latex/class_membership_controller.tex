@@ -1,0 +1,92 @@
+\hypertarget{class_membership_controller}{\section{Membership\-Controller Class Reference}
+\label{class_membership_controller}\index{Membership\-Controller@{Membership\-Controller}}
+}
+
+
+{\ttfamily \#include $<$membershipcontroller.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_membership_controller_a5dee58ec4865052d85156b9f042b429c}{add\-Member} (\hyperlink{class_member}{Member} m)
+\item 
+void \hyperlink{class_membership_controller_acfdd3d9ccaa56cf6f41c4237c2d47f14}{check\-Membership\-Expiry} (\hyperlink{class_member}{Member} m)
+\item 
+void \hyperlink{class_membership_controller_af26d202b3274cfff1d2bb8cb2b2f0784}{delete\-Member} (\hyperlink{class_member}{Member} m)
+\item 
+\hyperlink{class_activity_profile}{Activity\-Profile} \hyperlink{class_membership_controller_a15765068736138fadf8837a7a7a05ad2}{get\-Member\-Activity\-Profile} (\hyperlink{class_member}{Member} m)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{class_person}{Person} $\ast$ $>$ \hyperlink{class_membership_controller_ab1ba5783f942d4df197a6d6b35ff40ee}{person\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controlls the status of all the members 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_membership_controller_a5dee58ec4865052d85156b9f042b429c}{\index{Membership\-Controller@{Membership\-Controller}!add\-Member@{add\-Member}}
+\index{add\-Member@{add\-Member}!MembershipController@{Membership\-Controller}}
+\subsubsection[{add\-Member}]{\setlength{\rightskip}{0pt plus 5cm}void Membership\-Controller\-::add\-Member (
+\begin{DoxyParamCaption}
+\item[{{\bf Member}}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_membership_controller_a5dee58ec4865052d85156b9f042b429c}
+Adds a member to the database 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_member}{Member}} & m -\/ The member to be added \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_membership_controller_acfdd3d9ccaa56cf6f41c4237c2d47f14}{\index{Membership\-Controller@{Membership\-Controller}!check\-Membership\-Expiry@{check\-Membership\-Expiry}}
+\index{check\-Membership\-Expiry@{check\-Membership\-Expiry}!MembershipController@{Membership\-Controller}}
+\subsubsection[{check\-Membership\-Expiry}]{\setlength{\rightskip}{0pt plus 5cm}void Membership\-Controller\-::check\-Membership\-Expiry (
+\begin{DoxyParamCaption}
+\item[{{\bf Member}}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_membership_controller_acfdd3d9ccaa56cf6f41c4237c2d47f14}
+Checks a member's expiry 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_member}{Member}} & m -\/ The membership to be investigated \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_membership_controller_af26d202b3274cfff1d2bb8cb2b2f0784}{\index{Membership\-Controller@{Membership\-Controller}!delete\-Member@{delete\-Member}}
+\index{delete\-Member@{delete\-Member}!MembershipController@{Membership\-Controller}}
+\subsubsection[{delete\-Member}]{\setlength{\rightskip}{0pt plus 5cm}void Membership\-Controller\-::delete\-Member (
+\begin{DoxyParamCaption}
+\item[{{\bf Member}}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_membership_controller_af26d202b3274cfff1d2bb8cb2b2f0784}
+Deletes a member from the database 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_member}{Member}} & m -\/ The member to be deleted \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_membership_controller_a15765068736138fadf8837a7a7a05ad2}{\index{Membership\-Controller@{Membership\-Controller}!get\-Member\-Activity\-Profile@{get\-Member\-Activity\-Profile}}
+\index{get\-Member\-Activity\-Profile@{get\-Member\-Activity\-Profile}!MembershipController@{Membership\-Controller}}
+\subsubsection[{get\-Member\-Activity\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Activity\-Profile} Membership\-Controller\-::get\-Member\-Activity\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf Member}}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_membership_controller_a15765068736138fadf8837a7a7a05ad2}
+Returns the members activity profile with enhanced statistics 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_member}{Member}} & m -\/ The member whose profile is desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_activity_profile}{Activity\-Profile} -\/ The activity of  m 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_membership_controller_ab1ba5783f942d4df197a6d6b35ff40ee}{\index{Membership\-Controller@{Membership\-Controller}!person\-List@{person\-List}}
+\index{person\-List@{person\-List}!MembershipController@{Membership\-Controller}}
+\subsubsection[{person\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Person}$\ast$$>$ Membership\-Controller\-::person\-List}}\label{class_membership_controller_ab1ba5783f942d4df197a6d6b35ff40ee}
+The list of current members and employees 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+membershipcontroller.\-h\item 
+membershipcontroller.\-cpp\end{DoxyCompactItemize}

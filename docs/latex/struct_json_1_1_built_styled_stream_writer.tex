@@ -1,0 +1,49 @@
+\hypertarget{struct_json_1_1_built_styled_stream_writer}{\section{Json\-:\-:Built\-Styled\-Stream\-Writer Struct Reference}
+\label{struct_json_1_1_built_styled_stream_writer}\index{Json\-::\-Built\-Styled\-Stream\-Writer@{Json\-::\-Built\-Styled\-Stream\-Writer}}
+}
+Inheritance diagram for Json\-:\-:Built\-Styled\-Stream\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_json_1_1_built_styled_stream_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_json_1_1_built_styled_stream_writer_ab0c2e665c86b22f8fafb0e52c8069954}{{\bfseries Built\-Styled\-Stream\-Writer} (std\-::string const \&indentation, \hyperlink{struct_json_1_1_comment_style_a51fc08f3518fd81eba12f340d19a3d0c}{Comment\-Style\-::\-Enum} cs, std\-::string const \&colon\-Symbol, std\-::string const \&null\-Symbol, std\-::string const \&ending\-Line\-Feed\-Symbol, bool use\-Special\-Floats, unsigned int precision)}\label{struct_json_1_1_built_styled_stream_writer_ab0c2e665c86b22f8fafb0e52c8069954}
+
+\item 
+int \hyperlink{struct_json_1_1_built_styled_stream_writer_a2ecffc3d66c4feddf208e5cd3b1c0f18}{write} (\hyperlink{class_json_1_1_value}{Value} const \&root, std\-::ostream $\ast$sout) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_json_1_1_built_styled_stream_writer_a2ecffc3d66c4feddf208e5cd3b1c0f18}{\index{Json\-::\-Built\-Styled\-Stream\-Writer@{Json\-::\-Built\-Styled\-Stream\-Writer}!write@{write}}
+\index{write@{write}!Json::BuiltStyledStreamWriter@{Json\-::\-Built\-Styled\-Stream\-Writer}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}int Json\-::\-Built\-Styled\-Stream\-Writer\-::write (
+\begin{DoxyParamCaption}
+\item[{{\bf Value} const \&}]{root, }
+\item[{std\-::ostream $\ast$}]{sout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{struct_json_1_1_built_styled_stream_writer_a2ecffc3d66c4feddf208e5cd3b1c0f18}
+Write \hyperlink{class_json_1_1_value}{Value} into document as configured in sub-\/class. Do not take ownership of sout, but maintain a reference during function. \begin{DoxyPrecond}{Precondition}
+sout != N\-U\-L\-L 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+zero on success (For now, we always return zero, so check the stream instead.) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\-::exception} & possibly, depending on configuration \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_json_1_1_stream_writer_a237368cf13b41decc015640d25f176ab}{Json\-::\-Stream\-Writer}.
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+jsoncpp.\-cpp\end{DoxyCompactItemize}

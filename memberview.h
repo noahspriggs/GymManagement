@@ -12,7 +12,7 @@ public:
   void viewClassList();
   void reserveTrainer(Employee e);
   void insertClass(FitnessLesson l);
-  void makePayment();
+  void makePayment(Member m, int amount);
   void vewActivityProfile(Member m);
 };
 #endif

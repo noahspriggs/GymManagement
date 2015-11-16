@@ -20,7 +20,7 @@ void insertClass(FitnessLesson l) {
 
 }
 
-void makePayment() {
+void makePayment(Member m, int amount) {
 
 }
 

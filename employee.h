@@ -6,6 +6,9 @@
 class Employee : public Person {
 public:
   Employee();
+  /**
+  Clones the current isntance
+  */
   virtual Person* clone();
 
   int hoursPerWeek;
